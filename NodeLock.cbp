@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="NodeLock" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="App">
+				<Option output="bin/nodelock" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/App/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Tests">
+				<Option output="bin/nodelock_tests" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Tests/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++17" />
+			<Add option="-Wall" />
+			<Add option="-Wextra" />
+			<Add option="-O2" />
+			<Add directory="include" />
+		</Compiler>
+		<Unit filename="include/nodelock/Node.h" />
+		<Unit filename="include/nodelock/NodeLockEngine.h" />
+		<Unit filename="include/nodelock/Pattern.h" />
+		<Unit filename="include/nodelock/PatternAnalyzer.h" />
+		<Unit filename="include/nodelock/PatternEnumerator.h" />
+		<Unit filename="include/nodelock/PatternGraph.h" />
+		<Unit filename="include/nodelock/PatternValidator.h" />
+		<Unit filename="include/nodelock/SearchSimulator.h" />
+		<Unit filename="src/core/NodeLockEngine.cpp" />
+		<Unit filename="src/core/Pattern.cpp" />
+		<Unit filename="src/core/PatternAnalyzer.cpp" />
+		<Unit filename="src/core/PatternEnumerator.cpp" />
+		<Unit filename="src/core/PatternGraph.cpp" />
+		<Unit filename="src/core/PatternValidator.cpp" />
+		<Unit filename="src/core/SearchSimulator.cpp" />
+		<Unit filename="src/app/ConsoleUI.h" />
+		<Unit filename="src/app/ConsoleUI.cpp" />
+		<Unit filename="src/app/main.cpp">
+			<Option target="App" />
+		</Unit>
+		<Unit filename="tests/test_main.cpp">
+			<Option target="Tests" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

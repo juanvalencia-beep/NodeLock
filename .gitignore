@@ -1,0 +1,28 @@
+# Build output
+bin/*
+!bin/.gitkeep
+obj/
+build/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Code::Blocks user-specific files
+*.depend
+*.layout
+*.cbTemp
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
